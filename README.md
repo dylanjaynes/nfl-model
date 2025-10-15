@@ -16,16 +16,16 @@ evaluate_week() is a quick function to view the inputted week's results for spre
 
 # Quickstart
 ```R
+# 1) install deps (see list below)
+# 2) run the quick demo
+source("quickstart.R")
+
+# or ad-hoc:
 targets <- learn_target_sds(2018:2024)
+wk <- run_weekly_report(2025, 5, targets, sims = 2000, bankroll = 500)
+ev <- evaluate_week(wk$all_games, season_target = 2025, week_target = 5)
+ev$summary
 
-wk <- run_weekly_report(season = 2024, week = 5, targets = targets, sims = 10000, (optional) bankroll = 1000 # if you'd like the Kelly suggested bet stake )
-
-wk
-```
-
-Once the week passes, or if running a previously done week then run:
-```R
-evaluate_week(df_model = wk$all_games, season = 2024, week = 5)
 ```
 # required R packages
 pkgs <- c(
