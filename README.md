@@ -6,8 +6,11 @@ A blend of play-by-play (pbp) data and drive level data is ultimately simmed tho
 The three main functions so far are run_one_game(), run_weekly_report(), and evaluate_week(). 
 
 run_one_game() exists in all the other sim functions, but can be used standalone to see a single game - especially useful for hypothetical lines
+
 run_weekly_report() generates 2 excel files, a "best bets" file and "all games" file for the selected week. 
+  
   best bets are determined by having ran the model back 6 years looking for which set of parameters (sigma, tau, degrees of freedom, weight of both models) produced the best outcomes, and from those outcomes which are trustworthy by Brier score. 
+
 evaluate_week() is a quick function to view the inputted week's results for spreads and totals picks delivering Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and Brier Score for each as well as simple hit rate on spreads and totals. 
 
 
