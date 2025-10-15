@@ -32,9 +32,11 @@ ev$summary
 
 ```
 # required R packages
+```R
 pkgs <- c(
   "dplyr","purrr","tibble","readr","writexl","janitor",
   "nflfastR","nflreadr","future","future.apply","truncnorm"
 )
 to_install <- setdiff(pkgs, rownames(installed.packages()))
 if (length(to_install)) install.packages(to_install)
+```
