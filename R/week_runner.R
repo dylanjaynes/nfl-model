@@ -1,3 +1,5 @@
+# run_one_game() is engine for whole process, simulating the matchup using the project_matchup and project_matchup_eckel() in projectors.R
+
 # ---------- helpers ----------
 .make_sim_mat <- function(home_vec, away_vec) {
   stopifnot(length(home_vec) == length(away_vec))
@@ -5,7 +7,7 @@
   return(m)
 }
 
-# Default Injury Impact Table - Not studied, guessed
+# Default Injury Impact Table - Not studied, guessed and not currently implemented
 
 injury_defaults <- list(
   QB  = -0.25,  # QB out ~ 25% hit to passing/offense
