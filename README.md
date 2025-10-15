@@ -14,7 +14,9 @@ evaluate_week() is a quick function to view the inputted week's results for spre
 the best method to test on your own: 
 
 targets <- learn_target_sds(2018:2024)
+
 wk <- run_weekly_report(season = 2024, week = 5, targets = targets, sims = 10000, (optional) bankroll = 1000 # if you'd like the Kelly suggested bet stake )
+
 View(wk$all_games)
 
 
