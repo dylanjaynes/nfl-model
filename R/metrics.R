@@ -1,3 +1,6 @@
+# baseline calculation of team metrics like Rushing YPC, Passing ANYA, etc. 
+# Eckel rate is a quality possession rate based on Parker @statsowar creation and naming
+
 calculate_team_metrics <- function(team_abbr, season, week, pbp) {
 
   # local helper
