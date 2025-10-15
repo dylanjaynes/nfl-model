@@ -23,6 +23,9 @@ source("quickstart.R")
 # or ad-hoc:
 targets <- learn_target_sds(2018:2024)
 wk <- run_weekly_report(2025, 5, targets, sims = 2000, bankroll = 500)
+wk
+# View the $all_games or $card details to see only suggested bets based on model history or all games for the week with ATS/Total pick/probability
+# Also a file will be saved to your directory /weekly_output/2025_w05/...xslx
 ev <- evaluate_week(wk$all_games, season_target = 2025, week_target = 5)
 ev$summary
 
