@@ -14,7 +14,7 @@ run_weekly_report() generates 2 excel files, a "best bets" file and "all games" 
 evaluate_week() is a quick function to view the inputted week's results for spreads and totals picks delivering Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and Brier Score for each as well as simple hit rate on spreads and totals. 
 
 
-the best method to test on your own: 
+# Quickstart
 
 targets <- learn_target_sds(2018:2024)
 
