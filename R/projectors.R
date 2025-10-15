@@ -1,3 +1,6 @@
+# injection of random noise from the standard deviation of relevant stats
+# main driver of model
+
 # ---- PBP projector (your YPP-style) ----
 project_matchup <- function(team1_abbr, team2_abbr, season, week, pbp, team1_metrics, team2_metrics) {
 
