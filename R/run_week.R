@@ -1,3 +1,5 @@
+# middle function, can be used in standalone but primarily setup to help operate the bridge between best_bet.R and run_one_game() in week_runner.R
+
 run_week <- function(season_target, week, sims = 10000,
                      w_eckel = 0.3,
                      targets = NULL,
