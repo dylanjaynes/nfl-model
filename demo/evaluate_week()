@@ -1,0 +1,30 @@
+>evaluate_week(wk6$all_games, 2025, 6)
+
+$per_game
+# A tibble: 15 × 25
+   game_id      gameday gametime home_team away_team spread_line_use total_line_use spread_mean actual_margin spread_error
+   <chr>        <chr>   <chr>    <chr>     <chr>               <dbl>          <dbl>       <dbl>         <int>        <dbl>
+ 1 2025_06_PHI… 2025-1… 20:15    NYG       PHI                  -7             40.5      -3.59             17      -20.6  
+ 2 2025_06_DEN… 2025-1… 09:30    NYJ       DEN                  -7.5           43.5      -7.78             -2       -5.78 
+ 3 2025_06_LAC… 2025-1… 13:00    MIA       LAC                  -3.5           45.5      -7.44             -2       -5.44 
+ 4 2025_06_CLE… 2025-1… 13:00    PIT       CLE                   5.5           37.5       9.19             14       -4.81 
+ 5 2025_06_LA_… 2025-1… 13:00    BAL       LA                   -7             43.5      -9.69            -14        4.31 
+ 6 2025_06_NE_… 2025-1… 13:00    NO        NE                   -3.5           46.5      -6.12             -6       -0.115
+ 7 2025_06_SEA… 2025-1… 13:00    JAX       SEA                  -1.5           47.5      -2.83             -8        5.17 
+ 8 2025_06_ARI… 2025-1… 13:00    IND       ARI                   8.5           46.5       7.76              4        3.76 
+ 9 2025_06_DAL… 2025-1… 13:00    CAR       DAL                  -3             47.5      -2.38              3       -5.38 
+10 2025_06_TEN… 2025-1… 16:05    LV        TEN                   3.5           41.5       3.86             10       -6.14 
+11 2025_06_CIN… 2025-1… 16:25    GB        CIN                  14             44.5      16.5               9        7.52 
+12 2025_06_SF_… 2025-1… 16:25    TB        SF                    3.5           46.5       5.25             11       -5.75 
+13 2025_06_DET… 2025-1… 20:20    KC        DET                   2.5           51.5       3.12             13       -9.88 
+14 2025_06_BUF… 2025-1… 19:15    ATL       BUF                  -3.5           49.5       0.530            10       -9.47 
+15 2025_06_CHI… 2025-1… 20:15    WAS       CHI                   5.5           49.5       5.24             -1        6.24 
+# ℹ 15 more variables: abs_error <dbl>, ATS_pick <chr>, ATS_prob <dbl>, ats_correct <lgl>, ats_push <lgl>,
+#   brier_ATS <dbl>, total_mean <dbl>, actual_total <int>, total_error <dbl>, abs_total_error <dbl>, Total_pick <chr>,
+#   Total_prob <dbl>, total_correct <lgl>, tot_push <lgl>, brier_Total <dbl>
+
+$summary
+# A tibble: 1 × 12
+  ATS_MAE ATS_RMSE ATS_Brier ATS_Hit ATS_Bets ATS_Push Total_MAE Total_RMSE Total_Brier Total_Hit Total_Bets Total_Push
+    <dbl>    <dbl>     <dbl>   <dbl>    <int>    <int>     <dbl>      <dbl>       <dbl>     <dbl>      <int>      <int>
+1    6.69     7.97     0.192   0.857       14        1      7.50       10.2       0.206     0.667         15          0
