@@ -1,0 +1,7 @@
+game <- run_one_game(2025, 5, "LA", "PHI", vegas_spread_line = 3, vegas_total_line = 49) #fake spread and total lines, can input anything
+> game %>% 
++     dplyr::select(home_team, away_team, home_mean, away_mean, spread_mean, total_mean, ATS_pick, ATS_prob, Total_pick, Total_prob)
+# A tibble: 1 × 10
+  home_team away_team home_mean away_mean spread_mean total_mean ATS_pick ATS_prob Total_pick Total_prob
+  <chr>     <chr>         <dbl>     <dbl>       <dbl>      <dbl> <chr>       <dbl> <chr>           <dbl>
+1 LA        PHI            21.3      18.6        2.75       39.9 PHI         0.510 Under           0.841
