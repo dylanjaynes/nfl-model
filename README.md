@@ -26,3 +26,11 @@ View(wk$all_games)
 Once the week passes, or if running a previously done week then run:
 
 evaluate_week(df_model = wk$all_games, season = 2024, week = 5)
+
+# required R packages
+pkgs <- c(
+  "dplyr","purrr","tibble","readr","writexl","janitor",
+  "nflfastR","nflreadr","future","future.apply","truncnorm"
+)
+to_install <- setdiff(pkgs, rownames(installed.packages()))
+if (length(to_install)) install.packages(to_install)
