@@ -1,4 +1,4 @@
-# --- priors you liked from bins_cmp ---
+# --- priors from bins_cmp ---
 PRI_SIG <- list(tau_spread=15, sigma_spread=7.5, df_spread=5, sigma_total=3, df_total=6)
 PRI_TAU <- list(tau_spread=16, sigma_spread=7.0, df_spread=5, sigma_total=3, df_total=6)
 PRI_DF  <- list(tau_spread=15, sigma_spread=7.0, df_spread=4, sigma_total=3, df_total=6)
