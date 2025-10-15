@@ -1,0 +1,53 @@
+wk6 <- run_weekly_report(2025, 6, targets, sims = 10000, bankroll = 1500)
+wk6
+$card
+# A tibble: 6 × 19
+  game_id season_target  week gameday gametime home_team away_team bet_type pick   prob  line ATS_pick ATS_prob Total_pick
+  <chr>           <dbl> <dbl> <chr>   <chr>    <chr>     <chr>     <chr>    <chr> <dbl> <dbl> <chr>       <dbl> <chr>     
+1 2025_0…          2025     6 2025-1… 20:15    NYG       PHI       Total    Under 0.581  40.5 NYG         0.635 Under     
+2 2025_0…          2025     6 2025-1… 13:00    CAR       DAL       Total    Over  0.800  47.5 CAR         0.522 Over      
+3 2025_0…          2025     6 2025-1… 13:00    JAX       SEA       Total    Under 0.798  47.5 SEA         0.545 Under     
+4 2025_0…          2025     6 2025-1… 16:05    LV        TEN       Total    Under 0.854  41.5 LV          0.518 Under     
+5 2025_0…          2025     6 2025-1… 19:15    ATL       BUF       Total    Under 0.727  49.5 ATL         0.635 Under     
+6 2025_0…          2025     6 2025-1… 20:15    WAS       CHI       Total    Over  0.566  49.5 CHI         0.514 Over      
+# ℹ 5 more variables: Total_prob <dbl>, priors <chr>, risk_frac_raw <dbl>, risk_frac_cap <dbl>, stake_dollars <dbl>
+
+$all_games
+# A tibble: 15 × 29
+   game_id         season_target  week gameday gametime home_team away_team vegas_spread_line vegas_total_line spread_mean
+   <chr>                   <dbl> <dbl> <chr>   <chr>    <chr>     <chr>                 <dbl>            <dbl>       <dbl>
+ 1 2025_06_PHI_NYG          2025     6 2025-1… 20:15    NYG       PHI                    -7               40.5      -3.59 
+ 2 2025_06_DEN_NYJ          2025     6 2025-1… 09:30    NYJ       DEN                    -7.5             43.5      -7.78 
+ 3 2025_06_LAC_MIA          2025     6 2025-1… 13:00    MIA       LAC                    -3.5             45.5      -7.44 
+ 4 2025_06_CLE_PIT          2025     6 2025-1… 13:00    PIT       CLE                     5.5             37.5       9.19 
+ 5 2025_06_LA_BAL           2025     6 2025-1… 13:00    BAL       LA                     -7               43.5      -9.69 
+ 6 2025_06_NE_NO            2025     6 2025-1… 13:00    NO        NE                     -3.5             46.5      -6.12 
+ 7 2025_06_SEA_JAX          2025     6 2025-1… 13:00    JAX       SEA                    -1.5             47.5      -2.83 
+ 8 2025_06_ARI_IND          2025     6 2025-1… 13:00    IND       ARI                     8.5             46.5       7.76 
+ 9 2025_06_DAL_CAR          2025     6 2025-1… 13:00    CAR       DAL                    -3               47.5      -2.38 
+10 2025_06_TEN_LV           2025     6 2025-1… 16:05    LV        TEN                     3.5             41.5       3.86 
+11 2025_06_CIN_GB           2025     6 2025-1… 16:25    GB        CIN                    14               44.5      16.5  
+12 2025_06_SF_TB            2025     6 2025-1… 16:25    TB        SF                      3.5             46.5       5.25 
+13 2025_06_DET_KC           2025     6 2025-1… 20:20    KC        DET                     2.5             51.5       3.12 
+14 2025_06_BUF_ATL          2025     6 2025-1… 19:15    ATL       BUF                    -3.5             49.5       0.530
+15 2025_06_CHI_WAS          2025     6 2025-1… 20:15    WAS       CHI                     5.5             49.5       5.24 
+# ℹ 19 more variables: total_mean <dbl>, ATS_pick <chr>, ATS_prob <dbl>, Total_pick <chr>, Total_prob <dbl>,
+#   Total_pick_high <chr>, Total_prob_high <dbl>, Total_prob_low <dbl>, ATS_pick_high <chr>, ATS_prob_high <dbl>,
+#   ATS_prob_mid <dbl>, recommend_total <lgl>, recommend_ats <lgl>, recommended <lgl>, bet_type <chr>, pick <chr>,
+#   prob <dbl>, priors <chr>, stake_dollars <dbl>
+
+$settled
+NULL
+
+$weekly_summary
+NULL
+
+$lifetime_summary
+NULL
+
+$files
+$files$card
+[1] "weekly_output/2025_w06/card_2025_w06_20251014_212258.xlsx"
+
+$files$all_games
+[1] "weekly_output/2025_w06/allgames_2025_w06_20251014_212258.xlsx"
